@@ -1,0 +1,92 @@
+*{
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+h2, h3 {
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: #D9C2C2;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    margin-bottom: 5px;
+}
+
+.logo img {
+    height: 150px;
+    width:  130px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center; /* Alinea los enlaces verticalmente */
+}
+
+.nav-links ul {
+    list-style: none; /* Elimina los bullets */
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.mainIndex {
+    padding: 20px;
+    display: flex;
+    background-color: #C4FAC2;
+    height: 720px;
+    margin-bottom: 5px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #9CCCFA;
+    height: 130px;
+}
+
+.mainSectionContent {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.mainPortadaImagen {
+    max-height: 45%;
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.mainPortadaDescripcion {
+    max-width: 95%;     /* Ajusta el tamaño máximo de la descripción */
+}
+
+/* Lo voy a usar cuando veamos como utilizar grid y flex */
+/*
+.mainSectionOtrasImagenes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainSectionOtrasImagenes img {
+    flex: 1;
+    margin: 0 10px;
+    max-width: 100%;
+    height: auto;
+}
+*/
