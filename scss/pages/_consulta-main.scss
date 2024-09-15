@@ -1,10 +1,16 @@
+%form-group-custom1 {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
 .consulta-form {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    max-width: 90%;
+    grid-template-columns: 1fr;
+    width: 100%;
 }
 
 .fix-height {
@@ -29,7 +35,7 @@
     }
 
     &:nth-child(5) {
-        grid-column: 1 / span 2;
+        grid-column: 1 / span 1;
     }
 }
 

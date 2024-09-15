@@ -7,9 +7,15 @@
     }
 
     .consulta-form {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
         max-width: 600px;
+    }
+
+    .form-group {
+        &:nth-child(5) {
+            grid-column: 1 / span 2;
+        }
     }
 
     .grid-responsive {
@@ -44,7 +50,7 @@
         display: flex;
     }
 
-    .fondoMasOscuro {
+    .offer1fondoOscuro, offer2fondoOscuro, offer3fondoOscuro {
         height: 65vh;
     }
 

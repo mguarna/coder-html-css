@@ -1,5 +1,22 @@
 @import "../mq/media";
 
+// Variables locales
+$offer1Height: 75vh;
+$offer2Height: 90vh;
+$offer3Height: 90vh;
+$blurImgs: rgba(75, 75, 75, 0.87);
+
+// Extends
+%offer-contenido {
+    margin: 0 auto;
+    padding: 2rem;
+    align-items: center;
+}
+%offer-fondoOscuro {
+    position: absolute;
+    width: 100%;
+}
+
 @mixin backgroundConfig($imgPath, $repeat, $size, $position, $height) {
     background-image: url($imgPath);
     background-repeat: $repeat;
@@ -8,17 +25,11 @@
     height: $height;
 }
 
-%offer-contenido {
-    margin: 0 auto;
-    padding: 2rem;
-    align-items: center;
-}
 
-.fondoMasOscuro {
-    position: absolute;
-    width: 100%;
-    height: 80vh;
-    background-color: rgba(75, 75, 75, 0.87);
+.offer1fondoOscuro {
+    @extend %offer-fondoOscuro;
+    height: $offer1Height;
+    background-color: $blurImgs;
 }
 
 .offer1Servicios {
@@ -26,11 +37,17 @@
         no-repeat,
         cover,
         42%,
-        80vh)
+        $offer1Height)
 }
 
 .offer1Contenido {
     @extend %offer-contenido
+}
+
+.offer2fondoOscuro {
+    @extend %offer-fondoOscuro;
+    height: $offer2Height;
+    background-color: $blurImgs;
 }
 
 .offer2Servicios {
@@ -38,11 +55,17 @@
         no-repeat,
         cover,
         0%,
-        80vh)
+        $offer2Height)
 }
 
 .offer2Contenido {
     @extend %offer-contenido
+}
+
+.offer3fondoOscuro {
+    @extend %offer-fondoOscuro;
+    height: $offer3Height;
+    background-color: $blurImgs;
 }
 
 .offer3Servicios {
@@ -50,7 +73,7 @@
     no-repeat,
     cover,
     42%,
-    80vh)
+    $offer3Height)
 }
 
 .offer3Contenido {
