@@ -1,0 +1,61 @@
+@import "../base/variables";
+
+// Extends
+
+%form-group-custom1 {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.botonCustom {
+    background-color: $backgroundColorBlue;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $hoverButtonGray;
+        transition: background-color 0.6s;
+
+    }
+}
+
+.botonContacto {
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: $backgroundColorBlue;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $hoverButtonGray;
+        transition: background-color 0.6s;
+
+    }
+}
+
+.combo {
+    width: 95%;
+    max-width: 18rem;
+}
+
+.marging {
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+}
+
+.grid-responsive {
+    margin-top: 1rem;
+    max-width: 100%;
+}

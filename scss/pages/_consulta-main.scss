@@ -1,0 +1,42 @@
+.consulta-form {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    max-width: 90%;
+}
+
+.fix-height {
+    height: 202.2px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input {
+        @extend %form-group-custom1;
+    }
+
+    textarea {
+        @extend %form-group-custom1;
+    }
+
+    &:nth-child(5) {
+        grid-column: 1 / span 2;
+    }
+}
+
+textarea {
+    resize: vertical;
+}
+
+.contenedorContacto {
+    height: 75vh;
+}

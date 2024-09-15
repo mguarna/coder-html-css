@@ -1,0 +1,17 @@
+@import "./base/variables";
+
+@import "./layout/footer";
+@import "./layout/header";
+
+@import "./mq/media";
+
+@import "./pages/consulta-main";
+@import "./pages/index-main";
+@import "./pages/nosotros-main";
+@import "./pages/servicios-main";
+
+body {
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}

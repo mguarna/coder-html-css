@@ -84,3 +84,7 @@ Para ver un commit mas antiguo
 - Unificar colores
 - Nav mas oscuro
 - Achicar parrafo, quitarle negrita, alejarlo de la imagen
+
+
+SASS Comandos
+- sass --watch scss/styles.scss css/styles.css

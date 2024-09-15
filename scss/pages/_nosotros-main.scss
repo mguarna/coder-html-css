@@ -1,0 +1,71 @@
+@import "../base/variables";
+
+%width-height-100 {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorNosotros {
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+.card-container {
+    perspective: 1000px;
+    width: 320px;
+    height: 560px;
+    margin-bottom: 1rem;
+}
+
+/* Tarjeta en sí */
+.card {
+    @extend %width-height-100;
+
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+/* Girar tarjeta al pasar el mouse */
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+/* Lados de la tarjeta (frente y reverso) */
+.card-side {
+    @extend %width-height-100;
+
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Estilo del frente de la tarjeta (imagen) */
+.card-front {
+    background-color: #fff;
+
+    /* Imagen en la tarjeta */
+    img {
+        @extend %width-height-100;
+        border-radius: 10px;
+    }
+}
+
+/* Estilo del reverso de la tarjeta (descripción) */
+.card-back {
+    background-color: $hoverButtonGray;
+    color: $backCardColorWhite;
+    transform: rotateY(180deg);
+    padding: 1rem;
+}
+
+.grid-responsive-nosotros {
+    margin-top: 1rem;
+    max-width: 100%;
+}
+
+
