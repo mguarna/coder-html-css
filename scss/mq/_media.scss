@@ -12,6 +12,14 @@
         max-width: 600px;
     }
 
+    .offer1fondoOscuro, .offer2fondoOscuro, .offer3fondoOscuro {
+        height: 70vh;
+    }
+
+    .offer1Servicios, .offer2Servicios, .offer3Servicios {
+        height: 70vh;
+    }
+
     .form-group {
         &:nth-child(5) {
             grid-column: 1 / span 2;
@@ -50,12 +58,12 @@
         display: flex;
     }
 
-    .offer1fondoOscuro, offer2fondoOscuro, offer3fondoOscuro {
-        height: 65vh;
+    .offer1fondoOscuro, .offer2fondoOscuro, .offer3fondoOscuro {
+        height: 75vh;
     }
 
     .offer1Servicios, .offer2Servicios, .offer3Servicios {
-        height: 65vh;
+        height: 75vh;
     }
 
     .atributosMapa {

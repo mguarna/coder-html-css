@@ -3,12 +3,13 @@
 @import "./layout/footer";
 @import "./layout/header";
 
-@import "./mq/media";
 
 @import "./pages/consulta-main";
 @import "./pages/index-main";
 @import "./pages/nosotros-main";
 @import "./pages/servicios-main";
+
+@import "./mq/media";
 
 body {
     margin: 0px;
